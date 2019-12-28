@@ -1,28 +1,40 @@
 body {
-  background-color: white;
+  font-family: "Arial", sans-serif;
+  background: #fff;
+  color: black;
 }
 
-h1 {
-    font-family: Arial, sans-serif;
-      color: orange;
-      text-align: center;
+.container {
+ font-family: "Arial", sans-serif;
+  margin: auto;
+  text-align: center;
+}
+
+.play-again-btn {
+
+}
+
+.icon-choices {
 }
 
 
-h3 {
-    font-family: Arial, sans-serif;
-      color: grey;
-      text-align: center;
+#scissors {
+   background: url(../img/scissors-icon.png);
+
 }
 
 
-ul {
-    font-family: Arial, sans-serif;
-    color: black;
-    text-align: left;
+#paper {
+    background: url(../img/paper-icon.png);
 }
 
-div{
-    font-family: Arial, sans-serif;
-    color: grey;
+
+#stone {
+   background: url(../img/stone-icon.png);
+}
+
+
+
+img {
+
 }

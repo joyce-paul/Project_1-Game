@@ -1,39 +1,71 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">
-        <title>Scissors Paper Stone</title>
+    <title>Scissors Paper Stone</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style type="text/css" link rel="stylesheet" href="style.css"></style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width">
   </head>
+
 <body>
-    <h1>Scissors Paper Stone</h1>
+<!-- Container to wrap all elements -->
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+            <h1>Scissors Paper Stone</h1>
+            <h4>Play against the computer</h4>
+        </div>
+    </div>
+</div>
 
 
-<div class="user-score">Score Board: You</div>
-<div class="computer-score">Score Board: Computer</div>
+ <div class="row">
+    <div class="col-sm-4 - text-center">
+        <div class="icons" id="scissors">
+            <img src="img/scissors-icon.png" width="auto" height="150" alt="scissors">
+        </div>
+    </div>
 
+    <div class="col-sm-4 - text-center">
+       <div class="icons" id="paper">
+          <img src="img/paper-icon.png" width="auto" height="200" alt="paper">
+       </div>
+    </div>
 
-<button>Start Game</button>
-<button>Play Again</button>
+    <div class="col-sm-4 - text-center">
+        <div class="icons" id="stone">
+            <img src="img/stone-icon.png" width="auto" height="140" alt="stone">
+        </div>
+    </div>
+</div>
 
+  <div class="row">
+    <div class="col-sm-2 - text-center">
+        <div class="scoreboard" id="player-score-label">You: </div>
+        <span id="player-score">0</span>
+    </div>
 
+    <div class="col-sm-8 - text-center">
+        <button type="button" class="btn btn-danger">Play Again</button>
+    </div>
 
-<h3>Instructions</h3>
-<p>
-<ul>
-    <li>Play against the computer.</li>
-    <li>Start game by clicking on the "Start Game" button.</li>
-    <li>Your turn starts the moment you click on any of the images of the scissors, paper or stone.</li>
-</ul>
+    <div class="col-sm-2 - text-center">
+        <div class="scoreboard" id="computer-score-label">Computer: </div>
+        <span id="computer-score">0</span>
+    </div>
+  </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+    <div class="result"><h5>Click on an image to start</h5></div>
+        </div>
+    </div>
+</div>
 
-</p>
+            <script src="script.js"></script>
 
-
-
-   <script src="script.js"></script>
-<!--    <footer>Made with -icon- by joyce</footer> -->
-</body>
+    </body>
 </html>
