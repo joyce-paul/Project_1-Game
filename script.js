@@ -97,21 +97,23 @@ startGame();
 
 
 // PLAY AGAIN
-
 function playAgain() {
     document.getElementById("play-again").addEventListener("click", function() {
-    // console.log("you clicked button");
-/*    document.getElementById("player-score").innerHTML = 0;
-    console.log("hello");
-    document.getElementById("computer-score").innerHTML = 0;*/
+    // console.log("you clicked play again button");
+    document.getElementById("player-score").innerHTML = 0;
+    // console.log("player score cleared");
+    document.getElementById("computer-score").innerHTML = 0;
+    // console.log("computer score cleared");
     })
 }
+
+playAgain();
+
 
 
 
 
 // TO DOs
-//   playAgain()
 // Change the cursor to pointer
 //   Change colors on icons when mouse pressed
 // myBicycle.color = "blue";
@@ -121,7 +123,7 @@ function playAgain() {
 //   Add player's name
 //   Update README file
 //   If/else game logic [DONE]
-
+//   playAgain()  [DONE]
 
 
 // Step 1: Set up playerScore & computerScore. Both start at 0
