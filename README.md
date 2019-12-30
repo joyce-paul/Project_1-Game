@@ -26,3 +26,8 @@ How the game flows:
 
 Optional: A timer between both the two boxes.
 - The stopwatch (set for 30 seconds) will start the moment you click on the "Start Game" button.
+
+
+
+Notes:
+When we select one of the icons, it will be compared against the computer's choice which is selecte

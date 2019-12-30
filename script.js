@@ -23,7 +23,7 @@ function winGame(playerChoice, computerChoice) { // Player wins
     playerScore++;
     document.getElementById("player-score").innerHTML = playerScore;
     document.getElementById("computer-score").innerHTML = computerScore;
-    document.querySelector(".result > h5").innerHTML = `${playerChoice.toUpperCase()} beats ${computerChoice.toUpperCase()}. You win!`;
+    document.querySelector(".result > h5").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}. You win!`;
 }
 
 
@@ -32,37 +32,39 @@ function loseGame(playerChoice, computerChoice) {
     computerScore++;
     document.getElementById("player-score").innerHTML = playerScore;
     document.getElementById("computer-score").innerHTML = computerScore;
-    document.querySelector(".result > h5").innerHTML = `${computerChoice.toUpperCase()} beats ${playerChoice.toUpperCase()}. Computer wins!`;
+    document.querySelector(".result > h5").innerHTML = `The computer chose ${computerChoice.toUpperCase()}. You chose ${playerChoice.toUpperCase()}. The computer wins!`;
 }
 
 
 // WHEN THERE IS A TIE
 function tie(playerChoice, computerChoice) {  // Tie
-    document.querySelector(".result > h5").innerHTML = `${playerChoice.toUpperCase()} equals ${computerChoice.toUpperCase()}. It is a tie!`;
+    document.querySelector(".result > h5").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}. It is a tie!`;
 }
 
 
-// GAME LOGIC  ---> review this
+
+// GAME LOGIC
 function choices(playerChoice, computerChoice) {
-    if (userChoice === computerChoice) {
+    var computerChoice = getComputerChoice();
+    if (playerChoice === computerChoice) {
         tie(playerChoice, computerChoice);
     }
 
-    if (userChoice === "scissors") {
+    if (playerChoice === "scissors") {
         if (computerChoice === "stone") {
             loseGame(playerChoice, computerChoice);
         } else {
             winGame(playerChoice, computerChoice);
         }
 }
-    if (userChoice === "paper") {
+    if (playerChoice === "paper") {
         if (computerChoice === "scissors") {
             loseGame(playerChoice, computerChoice);
         } else {
             winGame(playerChoice, computerChoice);
         }
     }
-    if (userChoice === "stone") {
+    if (playerChoice === "stone") {
         if (computerChoice === "paper") {
             loseGame(playerChoice, computerChoice);
         } else {
@@ -70,6 +72,8 @@ function choices(playerChoice, computerChoice) {
         }
     }
 }
+
+
 
 
 
@@ -97,7 +101,6 @@ startGame();
 
 
 // PLAY AGAIN ---> does not work
-
 function playAgain() {
     document.getElementById("btn").addEventListener("click", function() {
         document.getElementById("player-score").innerHTML = 0;
@@ -109,18 +112,19 @@ function playAgain() {
 
 
 
+
 // TO DOs
+//  -->  if/else game logic [DONE]
 //  -->  playAgain()
-//  -->  if/else
-//  -->  CSS
 //  Change colors on icons when mouse pressed
+// set timeout message of You WIN, You LOSE, IT IS A TIE. Color coded
+//  -->  CSS: reduce screen size.
+// Update README file
 
 
 
 
-
-// Step 1: Set up userScore & computerScore. Both start at 0
-
+// Step 1: Set up playerScore & computerScore. Both start at 0
 // Step 2:  Check if event listeners on icons work
 /*var iconChoices = document.querySelectorAll(".icons");
 // Event listeners attached to all buttons using for loop
@@ -142,7 +146,7 @@ for (var i = 0; i < iconChoices.length; i++) {
 // })
 
 // Step 4: Game Logic as follows:
-// (a) Get userInput --> (onclick)
+// (a) Get playerInput --> (onclick)
 // (b) Get computerInput --> (Math.random(Math.floor))
-// (c) If User or Computer wins or a tie, alert box
+// (c) If player or Computer wins or a tie, alert box
 // (d)Click Play Again button to restart game
