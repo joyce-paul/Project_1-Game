@@ -37,10 +37,9 @@ function loseGame(playerChoice, computerChoice) {
 
 
 // WHEN THERE IS A TIE
-function tie(playerChoice, computerChoice) {  // Tie
+function tie(playerChoice, computerChoice) {
     document.querySelector(".result > h5").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}. It is a tie!`;
 }
-
 
 
 // GAME LOGIC
@@ -75,8 +74,6 @@ function choices(playerChoice, computerChoice) {
 
 
 
-
-
 // EVENT LISTENERS ON ALL THREE ICONS TO SHOW THAT PLAYER CLICKED ON THEM
 function startGame() {
     document.getElementById("scissors").addEventListener("click", function() {
@@ -99,28 +96,31 @@ function startGame() {
 startGame();
 
 
+// PLAY AGAIN
 
-// PLAY AGAIN ---> does not work
 function playAgain() {
-    document.getElementById("btn").addEventListener("click", function() {
-        document.getElementById("player-score").innerHTML = 0;
-        document.getElementById("computer-score").innerHTML = 0;
+    document.getElementById("play-again").addEventListener("click", function() {
+    // console.log("you clicked button");
+/*    document.getElementById("player-score").innerHTML = 0;
+    console.log("hello");
+    document.getElementById("computer-score").innerHTML = 0;*/
     })
 }
 
 
 
 
-
-
 // TO DOs
-//  -->  if/else game logic [DONE]
-//  -->  playAgain()
-//  Change colors on icons when mouse pressed
-// set timeout message of You WIN, You LOSE, IT IS A TIE. Color coded
-//  -->  CSS: reduce screen size.
-// Update README file
+//   playAgain()
+// Change the cursor to pointer
+//   Change colors on icons when mouse pressed
+// myBicycle.color = "blue";
 
+//   Set timeout message of You WIN, You LOSE, IT IS A TIE. Color coded
+//   CSS: reduce screen size.
+//   Add player's name
+//   Update README file
+//   If/else game logic [DONE]
 
 
 
