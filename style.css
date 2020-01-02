@@ -1,18 +1,58 @@
 body {
-  font-family: "Arial", sans-serif;
-  background: #fff;
-  color: black;
+    font-family: "Arial", sans-serif;
+    background: #edefec;
+    color: #5a5b5d;
+    text-align: center;
 }
 
 .container {
- font-family: "Arial", sans-serif;
-  margin: auto;
-  text-align: center;
+    margin: 20px auto;
+    width: 100%;
+    cursor: pointer;
 }
 
 
-.play-again-btn {
+h1 {
+    font-family: "Arial", sans-serif;
+    color: red;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
 
+
+h4 {
+    font-family: "Arial", sans-serif;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+
+h5 {
+    font-family: "Arial", sans-serif;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.icons {
+    width: 100%;
+    margin: 0;
+}
+
+.icon {
+    display: inline-block;
+    position: relative;
+    margin: 30px 20px 30px 0;
+    width: 240px;
+    max-width: 33%;
+    height: 262px;
+    border-style: solid;
+}
+
+
+
+
+/*#play-again {
+    cursor: pointer;
 }
 
 .icon-choices {
@@ -26,15 +66,11 @@ body {
 
 #paper {
     background: url(../img/paper-icon.png);
+
 }
 
 
 #stone {
    background: url(../img/stone-icon.png);
 }
-
-
-
-img {
-
-}
+*/

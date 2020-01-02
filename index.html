@@ -1,77 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Scissors Paper Stone</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <style type="text/css" link rel="stylesheet" href="style.css"></style>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width">
-  </head>
-
+    <head>
+        <link rel="stylesheet" style type="text/css" href="./style.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+            <title>Scissors Paper Stone</title>
+    </head>
 <body>
-<!-- Container to wrap all elements -->
-    <div class="container">
-      <div class="row">
-        <div class="col text-center">
-            <h1>Scissors Paper Stone</h1>
-            <h4>Play against the computer</h4>
-        </div>
+
+<!-- CONTAINER THAT WRAPS ALL ELEMENTSs -->
+<div class="container">
+    <h1>Scissors Paper Stone</h1>
+    <h4>Play against the computer</h4>
+
+
+<!-- START OF ICONS -->
+<div class="icons">
+    <div class="icon icon-1" id="scissors">
+        <img src="img/scissors-icon.png" width="auto" height="150" alt="scissors">
     </div>
+
+    <div class="icon icon-2" id="paper">
+        <img src="img/paper-icon.png" width="auto" height="200" alt="paper">
+    </div>
+
+    <div class="icon icon-3" id="stone">
+        <img src="img/stone-icon.png" width="auto" height="140" alt="stone">
+    </div>
+
 </div>
 
 
- <div class="row">
-    <div class="col-sm-4 - text-center">
-        <div class="icons" id="scissors">
-            <img src="img/scissors-icon.png" width="auto" height="150" alt="scissors">
-        </div>
-    </div>
-
-    <div class="col-sm-4 - text-center">
-       <div class="icons" id="paper">
-          <img src="img/paper-icon.png" width="auto" height="200" alt="paper">
-       </div>
-    </div>
-
-    <div class="col-sm-4 - text-center">
-        <div class="icons" id="stone">
-            <img src="img/stone-icon.png" width="auto" height="140" alt="stone">
-        </div>
-    </div>
-</div>
-
-  <div class="row">
-    <div class="col-sm-2 - text-center">
-        <div class="scoreboard" id="player-score-label">You: </div>
+<!--PLAYER SCORE -->
+<div id="player-score-label" class="scoreboard">You:
         <span id="player-score">0</span>
-    </div>
+</div>
 
-    <div class="col-sm-8 - text-center">
-  <div class="result"><h5>Click on an image to start</h5></div>
+<!--RESULT -->
+<div class="result">
+    <h5>Click on an image to start</h5>
+</div>
 
-
-    </div>
-
-    <div class="col-sm-2 - text-center">
-        <div class="scoreboard" id="computer-score-label">Computer: </div>
-        <span id="computer-score">0</span>
-    </div>
-  </div>
-
-
-    <div class="container">
-      <div class="row">
-        <div class="col text-center">
-          <button type="button" class="btn btn-danger" id="play-again">Play Again</button>
-        </div>
-    </div>
+<!--COMPUTER SCORE -->
+<div id="computer-score-label" class="scoreboard" >Computer:
+    <span id="computer-score">0</span>
 </div>
 
 
+<!--PLAY AGAIN BUTTON -->
+<button class="btn" id="play-again">Play Again</button>
 
 
 
-            <script src="script.js"></script>
+
+</div>
+        <script src="script.js"></script>
     </body>
 </html>
