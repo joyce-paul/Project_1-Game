@@ -4,24 +4,17 @@ Project Name: "Scissors Paper Stone"
 
 How the game flows:
 1) Page Layout:
-    * Box on the left side of page:
+    - Three images of "scissors", "paper" and "stone" set in inline-block
     - Player's score
-    - There will be three images of "scissors", "paper" and "stone".
-
-    * Box on the right side of page:
     - Computer's score
+    - Play again button to reset scores
 
 
-2) Game Instructions: A box of instructions at the bottom center of the page
-* Text for Game Instructions:
+2) Text for Game Instructions:
 - Play against the computer.
-- Start game by clicking on one of the icons. Player's turn starts the moment you click on any of the images of the scissors, paper or stone.
+- Click on an image to start.
 
-3) When player wins, a winning message will show on screen.
-4) Similarly, When player loses, a message will show on the screen.
-5) When there is a tie, a message will show on screen.
-
-
+3) Messages will show on screen when player wins, loses or when there is a tie.
 
 Notes:
-When we select one of the icons, it will be compared against the computer's choice which is selected via Math.random().
+When we select one of the icons, it will be compared against the computer's choice which is selected via Math.floor(Math.random() * 3).

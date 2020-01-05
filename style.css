@@ -8,13 +8,12 @@ body {
 .container {
     margin: 20px auto;
     width: 100%;
-    cursor: pointer;
 }
 
 
 h1 {
     font-family: "Arial", sans-serif;
-    color: red;
+    color: #990000;
     margin-top: 40px;
     margin-bottom: 10px;
 }
@@ -22,15 +21,11 @@ h1 {
 
 h4 {
     font-family: "Arial", sans-serif;
-    margin-top: 40px;
-    margin-bottom: 10px;
 }
 
 
 h5 {
     font-family: "Arial", sans-serif;
-    margin-top: 40px;
-    margin-bottom: 10px;
 }
 
 .icons {
@@ -41,36 +36,41 @@ h5 {
 .icon {
     display: inline-block;
     position: relative;
-    margin: 30px 20px 30px 0;
-    width: 240px;
-    max-width: 33%;
-    height: 262px;
-    border-style: solid;
-}
-
-
-
-
-/*#play-again {
+    margin: 30px;
     cursor: pointer;
+    border-radius: 30px;
+    border: 2px solid green;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
 }
 
-.icon-choices {
+
+#play-again {
+    cursor: pointer;
+    color: white;
+    background-color: orange;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 
-#scissors {
+
+#result {
+
+}
+
+
+/*#scissors {
    background: url(../img/scissors-icon.png);
 }
-
 
 #paper {
     background: url(../img/paper-icon.png);
 
 }
 
-
 #stone {
    background: url(../img/stone-icon.png);
-}
-*/
+}*/

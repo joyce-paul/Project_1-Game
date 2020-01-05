@@ -8,7 +8,7 @@ var iconChoices = document.querySelectorAll(".icons"); //All icons into a variab
 function getComputerChoice() {
     var choices =["Scissors", "Paper", "Stone"];
     var randomNumber = Math.floor(Math.random() * 3)
-    if (randomNumber === 2) {
+    if (randomNumber === 0) {
         return "scissors";
     } else if (randomNumber === 1) {
         return "paper";
@@ -24,7 +24,10 @@ function winGame(playerChoice, computerChoice) { // Player wins
     document.getElementById("player-score").innerHTML = playerScore;
     document.getElementById("computer-score").innerHTML = computerScore;
     document.querySelector(".result > h5").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}. You win!`;
+    console.log(`you clicked ${playerChoice}`)
 }
+
+
 
 
 // PLAYER LOSES TO COMPUTER
@@ -32,7 +35,7 @@ function loseGame(playerChoice, computerChoice) {
     computerScore++;
     document.getElementById("player-score").innerHTML = playerScore;
     document.getElementById("computer-score").innerHTML = computerScore;
-    document.querySelector(".result > h5").innerHTML = `The computer chose ${computerChoice.toUpperCase()}. You chose ${playerChoice.toUpperCase()}. The computer wins!`;
+    document.querySelector(".result > h5").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}. The computer wins!`;
 }
 
 
@@ -99,7 +102,7 @@ startGame();
 // PLAY AGAIN
 function playAgain() {
     document.getElementById("play-again").addEventListener("click", function() {
-    // console.log("you clicked play again button");
+    console.log("Play again button clicked and scoreboard cleared");
     document.getElementById("player-score").innerHTML = 0;
     // console.log("player score cleared");
     document.getElementById("computer-score").innerHTML = 0;
@@ -114,14 +117,17 @@ playAgain();
 
 
 // TO DOs
-// Change the cursor to pointer
+// Increase font size of win, lose and tie messages.
+//   Set timeout message of You WIN, You LOSE, IT IS A TIE. Color coded
+// playAgain button to have an effect upon pressing
+
 //   Change colors on icons when mouse pressed
 // myBicycle.color = "blue";
-
-//   Set timeout message of You WIN, You LOSE, IT IS A TIE. Color coded
+// Change the cursor to pointer
 //   CSS: reduce screen size.
 //   Add player's name
 //   Update README file
+
 //   If/else game logic [DONE]
 //   playAgain()  [DONE]
 
