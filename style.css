@@ -13,7 +13,7 @@ body {
 
 h1 {
     font-family: "Arial", sans-serif;
-    color: #990000;
+    color: green;
     margin-top: 40px;
     margin-bottom: 10px;
 }
@@ -26,6 +26,7 @@ h4 {
 
 h5 {
     font-family: "Arial", sans-serif;
+    font-size: 20px;
 }
 
 .icons {
@@ -46,10 +47,21 @@ h5 {
 }
 
 
+.icon-text {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    color: green;
+}
+
+
+
+
 #play-again {
     cursor: pointer;
     color: white;
-    background-color: orange;
+    background-color: green;
     font-size: 16px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -58,6 +70,8 @@ h5 {
 
 
 #result {
+
+
 
 }
 
