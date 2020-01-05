@@ -107,6 +107,7 @@ function playAgain() {
     // console.log("player score cleared");
     document.getElementById("computer-score").innerHTML = 0;
     // console.log("computer score cleared");
+    document.querySelector(".result > h5").innerHTML = `Start playing again. Select scissors, paper or stone.`;
     })
 }
 
@@ -117,21 +118,21 @@ playAgain();
 
 
 // TO DOs
+
+// Media query
+// playAgain button to have an effect upon pressing
 // Increase font size of win, lose and tie messages.
 //   Set timeout message of You WIN, You LOSE, IT IS A TIE. Color coded
-// playAgain button to have an effect upon pressing
-
 //   Change colors on icons when mouse pressed
 // myBicycle.color = "blue";
-// Change the cursor to pointer
 //   CSS: reduce screen size.
-//   Add player's name
 //   Update README file
 
+
+// Attach playAgain button to new start playing game message [DONE]
+// Change the cursor to pointer [DONE]
 //   If/else game logic [DONE]
 //   playAgain()  [DONE]
-
-
 // Step 1: Set up playerScore & computerScore. Both start at 0
 // Step 2:  Check if event listeners on icons work
 /*var iconChoices = document.querySelectorAll(".icons");
