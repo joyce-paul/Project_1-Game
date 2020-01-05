@@ -23,11 +23,11 @@ function winGame(playerChoice, computerChoice) { // Player wins
     playerScore++;
     document.getElementById("player-score").innerHTML = playerScore;
     document.getElementById("computer-score").innerHTML = computerScore;
-    document.querySelector(".result > h5").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}. You win!`;
-    console.log(`you clicked ${playerChoice}`)
+    document.querySelector(".result > h5").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
+    document.querySelector(".outcome").innerHTML = `You Won!`;
+    document.querySelector(".outcome").style.color = "green";
+    console.log(`you clicked ${playerChoice}`);
 }
-
-
 
 
 // PLAYER LOSES TO COMPUTER
@@ -35,13 +35,17 @@ function loseGame(playerChoice, computerChoice) {
     computerScore++;
     document.getElementById("player-score").innerHTML = playerScore;
     document.getElementById("computer-score").innerHTML = computerScore;
-    document.querySelector(".result > h5").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}. The computer wins!`;
+    document.querySelector(".result > h5").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
+    document.querySelector(".outcome").innerHTML = `You Lost!`;
+    document.querySelector(".outcome").style.color = "red";
 }
 
 
 // WHEN THERE IS A TIE
 function tie(playerChoice, computerChoice) {
-    document.querySelector(".result > h5").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}. It is a tie!`;
+    document.querySelector(".result > h5").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
+     document.querySelector(".outcome").innerHTML = `It is a tie!`;
+     document.querySelector(".outcome").style.color = "grey";
 }
 
 
@@ -107,7 +111,8 @@ function playAgain() {
     // console.log("player score cleared");
     document.getElementById("computer-score").innerHTML = 0;
     // console.log("computer score cleared");
-    document.querySelector(".result > h5").innerHTML = `Start playing again. Select scissors, paper or stone.`;
+   document.querySelector(".result > h5").innerHTML = `Play again. Select scissors, paper or stone.`;
+   document.querySelector(".outcome").innerHTML = ``; //removes text once button is clicked.
     })
 }
 
@@ -116,19 +121,20 @@ playAgain();
 
 
 
-
 // TO DOs
 
 // Media query
-// playAgain button to have an effect upon pressing
 // Increase font size of win, lose and tie messages.
 //   Set timeout message of You WIN, You LOSE, IT IS A TIE. Color coded
-//   Change colors on icons when mouse pressed
 // myBicycle.color = "blue";
 //   CSS: reduce screen size.
 //   Update README file
+//  Add instructions on how to play the game
 
 
+
+//   Change colors on icons when mouse pressed [DONE]
+// playAgain button to have an effect upon pressing [DONE]
 // Attach playAgain button to new start playing game message [DONE]
 // Change the cursor to pointer [DONE]
 //   If/else game logic [DONE]
