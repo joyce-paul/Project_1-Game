@@ -90,8 +90,10 @@ p {
 .icon:active {
   background-color: green;
   box-shadow: 0 5px #666;
-  transform: translateY(4px);
-  }
+  transform: rotate(140deg);
+ /* transform: translateY(4px);*/
+}
+
 
 
 .icon-text {
@@ -144,18 +146,3 @@ p {
   background-color: green;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-
-
-
-/*#scissors {
-   background: url(../img/scissors-icon.png);
-}
-
-#paper {
-    background: url(../img/paper-icon.png);
-
-}
-
-#stone {
-   background: url(../img/stone-icon.png);
-}*/

@@ -1,7 +1,10 @@
 console.log("Scissors-Paper-Stone: Game starts now");
 var playerScore = 0; //Player score starts at 0
 var computerScore = 0; //Computer score starts at 0
-/*var iconChoices = document.querySelectorAll(".icons");*/ //All icons into a variable
+
+/*var scissors = ✌🏽;
+var paper = ✋🏽;
+var stone = ✊🏽;*/
 
 
 // GET COMPUTER CHOICES USING RANDOM NUMBERS (MATH.RANDOM) AND MATH.FLOOR FOR WHOLE NUMBERS
@@ -119,19 +122,15 @@ function playAgain() {
     document.getElementById("computer-score").innerHTML = 0;
     // console.log("computer score cleared");
 
-    playerScore = 0;
-    computerScore = 0;
+    playerScore = 0; // Reset playerScore to 0
+    computerScore = 0; // Reset computerScore to 0
 
-
-
-   document.querySelector(".result > h5").innerHTML = `Play again. Select scissors, paper or stone.`; // Message appears once playAgain button clicked
-   document.querySelector(".outcome").innerHTML = ``; //removes text once button is clicked.
+   document.querySelector(".result > h5").innerHTML = "Play again. Select scissors, paper or stone."; // Message appears once playAgain button clicked
+   document.querySelector(".outcome").innerHTML = ""; //removes text once button is clicked.
     })
 }
 
 playAgain();
-
-
 
 
 // TO DOs
@@ -140,7 +139,6 @@ playAgain();
 // Error in the TIE function
 //   Update README file
 // A link to my hosted working game in the URL section of your Github repo.
-// Media query
 
 
 // The scores seem to be added multiple times sometimes. [DONE]
@@ -152,7 +150,6 @@ playAgain();
 // Change the cursor to pointer [DONE]
 //   If/else game logic [DONE]
 //   playAgain()  [DONE]
-
 
 
 // Step 1: Set up playerScore & computerScore. Both start at 0
