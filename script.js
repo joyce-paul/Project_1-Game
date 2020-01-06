@@ -1,9 +1,11 @@
 console.log("Scissors-Paper-Stone: Game starts now");
+
+// STEP 1 - SET UP SCORES IN GLOBAL VARIABLES
 var playerScore = 0; //Player score starts at 0
 var computerScore = 0; //Computer score starts at 0
 
 
-// GET COMPUTER CHOICES USING RANDOM NUMBERS (MATH.RANDOM) AND MATH.FLOOR FOR WHOLE NUMBERS
+// STEP 2 -- GET COMPUTER CHOICES USING RANDOM NUMBERS (MATH.RANDOM) AND MATH.FLOOR FOR WHOLE NUMBERS
 function getComputerChoice() {
     var randomNumber = Math.floor(Math.random() * 3)
     if (randomNumber === 0) {
@@ -17,6 +19,7 @@ function getComputerChoice() {
 
 
 
+// STEP 3 -- DEFINE FUNCTION WHERE PLAYER WINS
 // PLAYER WINS
 function winGame(playerChoice, computerChoice) { // Player wins
     playerScore++;
@@ -25,13 +28,12 @@ function winGame(playerChoice, computerChoice) { // Player wins
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
     document.querySelector(".outcome").innerHTML = "You Won!"; // Message that says player won game
     document.querySelector(".outcome").style.color = "green"; // Message colour switched to green
-// append. CSS animation keyframes
+
     console.log(`you clicked ${playerChoice}`);
 }
 
 
-
-
+// STEP 4 -- DEFINE FUNCTION WHERE PLAYER LOSES
 // PLAYER LOSES
 function loseGame(playerChoice, computerChoice) {
     computerScore++;
@@ -44,49 +46,43 @@ function loseGame(playerChoice, computerChoice) {
 }
 
 
+// STEP 5 -- DEFINE FUNCTION WHERE THERE IS A TIE
 // WHEN THERE IS A TIE
 function tie(playerChoice, computerChoice) {
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
-     document.querySelector(".outcome").innerHTML = "It is a tie!"; // Message that says it is a tie
-     document.querySelector(".outcome").style.color = "grey"; // Message colour switched to grey
+     document.querySelector(".outcome").innerHTML = "TIE!"; // Message that says it is a tie
+     document.querySelector(".outcome").style.color = "orange"; // Message colour switched to grey
 }
 
 
 
-
+// STEP 6 -- IF AND ELSE STATEMENT OF PLAYER AND COMPUTER CHOICES
 function choices(playerChoice, computerChoice) {
     var computerChoice = getComputerChoice();
-    if (playerChoice === computerChoice) {
-        tie(playerChoice, computerChoice);
-    }
-
-    if (playerChoice === "scissors") {
-        if (computerChoice === "stone") {
+        if (playerChoice === computerChoice) {
+            tie(playerChoice, computerChoice);
+        } else if (playerChoice === "scissors" && computerChoice === "stone") {
+        loseGame(playerChoice, computerChoice);
+        } else if (playerChoice === "paper" && computerChoice === "stone") {
+            winGame(playerChoice, computerChoice);
+        } else if (playerChoice === "stone" && computerChoice === "scissors") {
+            winGame(playerChoice, computerChoice);
+        } else if (playerChoice === "scissors" && computerChoice === "paper") {
+            winGame(playerChoice, computerChoice);
+        } else if (playerChoice === "stone" && computerChoice === "paper") {
+            loseGame(playerChoice, computerChoice);
+        } else if (playerChoice === "paper" && computerChoice === "scissors") {
             loseGame(playerChoice, computerChoice);
         } else {
-            winGame(playerChoice, computerChoice);
+            console.log("Play again");
         }
-}
-    if (playerChoice === "paper") {
-        if (computerChoice === "scissors") {
-            loseGame(playerChoice, computerChoice);
-        } else {
-            winGame(playerChoice, computerChoice);
         }
-    }
-    if (playerChoice === "stone") {
-        if (computerChoice === "paper") {
-            loseGame(playerChoice, computerChoice);
-        } else {
-            winGame(playerChoice, computerChoice);
-        }
-    }
-}
 
 getComputerChoice();
 
 
 
+// STEP 7 -- DEFINE START GAME FUNCTION
 // EVENT LISTENERS ON ALL THREE ICONS TO SHOW THAT PLAYER CLICKED ON THEM
 function startGame() {
     document.getElementById("scissors").addEventListener("click", function() {
@@ -109,6 +105,7 @@ function startGame() {
 startGame();
 
 
+// STEP 8 -- DEFINE PLAY AGAIN FUNCTION TO RESET SCORES
 // PLAY AGAIN
 function playAgain() {
     document.getElementById("play-again").addEventListener("click", function() {
@@ -130,15 +127,16 @@ playAgain();
 
 
 // TO DOs
-// Use emojis to replace text [DONE]
-// append. CSS animation keyframes
+// Scissors paper stone heading animation
 // Error in the TIE function
+// Revise if and else statements
+// Audio effects for Win Lose or Draw
 //   Update README file
 // A link to my hosted working game in the URL section of your Github repo.
+// append. CSS animation keyframes
 
 
-
-
+// Use emojis to replace text [DONE]
 // The scores seem to be added multiple times sometimes. [DONE]
 // Instructions on how to play the game [DONE]
 // Increase font size of win, lose and tie messages. [DONE]
