@@ -2,10 +2,6 @@ console.log("Scissors-Paper-Stone: Game starts now");
 var playerScore = 0; //Player score starts at 0
 var computerScore = 0; //Computer score starts at 0
 
-/*var scissors = ✌🏽;
-var paper = ✋🏽;
-var stone = ✊🏽;*/
-
 
 // GET COMPUTER CHOICES USING RANDOM NUMBERS (MATH.RANDOM) AND MATH.FLOOR FOR WHOLE NUMBERS
 function getComputerChoice() {
@@ -26,7 +22,7 @@ function winGame(playerChoice, computerChoice) { // Player wins
     playerScore++;
     document.getElementById("player-score").innerHTML = playerScore;
     document.getElementById("computer-score").innerHTML = computerScore;
-    document.querySelector(".result > h5").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
+    document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
     document.querySelector(".outcome").innerHTML = "You Won!"; // Message that says player won game
     document.querySelector(".outcome").style.color = "green"; // Message colour switched to green
 // append. CSS animation keyframes
@@ -41,7 +37,7 @@ function loseGame(playerChoice, computerChoice) {
     computerScore++;
     document.getElementById("player-score").innerHTML = playerScore;
     document.getElementById("computer-score").innerHTML = computerScore;
-    document.querySelector(".result > h5").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
+    document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
     document.querySelector(".outcome").innerHTML = "You Lost!"; // Message that says player lost game
     document.querySelector(".outcome").style.color = "red"; // Message colour switched to red
     console.log(`you clicked ${playerChoice}`);
@@ -50,7 +46,7 @@ function loseGame(playerChoice, computerChoice) {
 
 // WHEN THERE IS A TIE
 function tie(playerChoice, computerChoice) {
-    document.querySelector(".result > h5").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
+    document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
      document.querySelector(".outcome").innerHTML = "It is a tie!"; // Message that says it is a tie
      document.querySelector(".outcome").style.color = "grey"; // Message colour switched to grey
 }
@@ -125,7 +121,7 @@ function playAgain() {
     playerScore = 0; // Reset playerScore to 0
     computerScore = 0; // Reset computerScore to 0
 
-   document.querySelector(".result > h5").innerHTML = "Play again. Select scissors, paper or stone."; // Message appears once playAgain button clicked
+   document.querySelector(".result > h3").innerHTML = "Select ✌🏽, ✋🏽 or ✊🏽."; // Message appears once playAgain button clicked
    document.querySelector(".outcome").innerHTML = ""; //removes text once button is clicked.
     })
 }
@@ -134,11 +130,13 @@ playAgain();
 
 
 // TO DOs
-// Use emojis to replace text
+// Use emojis to replace text [DONE]
 // append. CSS animation keyframes
 // Error in the TIE function
 //   Update README file
 // A link to my hosted working game in the URL section of your Github repo.
+
+
 
 
 // The scores seem to be added multiple times sometimes. [DONE]
