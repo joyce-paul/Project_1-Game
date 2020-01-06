@@ -124,15 +124,13 @@ playAgain();
 // TO DOs
 
 // Media query
-// Increase font size of win, lose and tie messages.
-//   Set timeout message of You WIN, You LOSE, IT IS A TIE. Color coded
-// myBicycle.color = "blue";
-//   CSS: reduce screen size.
+//   Set timeout message of You WIN, You LOSE, IT IS A TIE.
 //   Update README file
-//  Add instructions on how to play the game
 
 
 
+// Instructions on how to play the game [DONE]
+// Increase font size of win, lose and tie messages. [DONE]
 //   Change colors on icons when mouse pressed [DONE]
 // playAgain button to have an effect upon pressing [DONE]
 // Attach playAgain button to new start playing game message [DONE]
