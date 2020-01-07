@@ -5,9 +5,7 @@ var playerScore = 0; //Player score starts at 0
 var computerScore = 0; //Computer score starts at 0
 
 
-
-
-/*function random_bg_color() {
+function random_bg_color() {
     var red = Math.floor(Math.random() * 256);
     var green = Math.floor(Math.random() * 256);
     var blue = Math.floor(Math.random() * 256);
@@ -17,7 +15,7 @@ var computerScore = 0; //Computer score starts at 0
     document.body.style.background = bgColor;
     }
 
-random_bg_color();*/
+random_bg_color();
 
 
 
@@ -62,8 +60,8 @@ function winGame(playerChoice, computerChoice) { // Player wins
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
     document.querySelector(".outcome").innerHTML = "You Won! 🤓"; // Message that says player won game
     document.querySelector(".outcome").style.color = "green"; // Message colour switched to green
-    document.body.style.backgroundColor = "#a9ff63";
-/*    random_bg_color();*/
+/*    document.body.style.backgroundColor = "#a9ff63";*/
+    random_bg_color();
     // console.log(`you clicked ${playerChoice}`);
 }
 
@@ -77,8 +75,8 @@ function loseGame(playerChoice, computerChoice) {
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
     document.querySelector(".outcome").innerHTML = "You Lost! 👿"; // Message that says player lost game
     document.querySelector(".outcome").style.color = "red"; // Message colour switched to red
-    document.body.style.backgroundColor = "yellow";
-/*random_bg_color();*/
+/*    document.body.style.backgroundColor = "yellow";*/
+random_bg_color();
     // console.log(`you clicked ${playerChoice}`);
 }
 
@@ -89,8 +87,8 @@ function tie(playerChoice, computerChoice) {
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
      document.querySelector(".outcome").innerHTML = "It is a TIE! 🧐"; // Message that says it is a tie
      document.querySelector(".outcome").style.color = "#ffc000"; // Message colour switched to grey
-     document.body.style.backgroundColor = "#4ffefe";
-/*random_bg_color();*/
+/*     document.body.style.backgroundColor = "#4ffefe";*/
+random_bg_color();
 }
 
 
@@ -159,8 +157,7 @@ function playAgain() {
    document.querySelector(".result > h3").innerHTML = "Select ✌🏽, ✋🏽 or ✊🏽."; // Message appears once playAgain button clicked
    document.querySelector(".outcome").innerHTML = ""; //removes text once button is clicked.
 
-   document.body.style.backgroundColor = "white";
-
+   document.body.style.backgroundColor = "#fffcfc";
 
     })
 }
@@ -173,7 +170,6 @@ playAgain();
 
 // Create random colour generator
 
-// Change the audio of the stone icon
 
 // Slow down the effects on icons when they flip
 
@@ -181,13 +177,14 @@ playAgain();
 
 // Update README
 
-// A link to my hosted working game in the URL section of your Github repo.
+// A link to my hosted working game in the URL section of your Github repo. [DONE]
 
 // Scissors paper stone heading animation
 
 // append. CSS animation keyframes
 
-
+// Change the audio of the stone icon [DONE]
+// A link to my hosted working game in the URL section of your Github repo. [DONE]
 // Background changes colour when win, lose or tie [DONE]
 // Audio for click on paper icon [DONE]
 // Audio for click on stone icon [DONE]

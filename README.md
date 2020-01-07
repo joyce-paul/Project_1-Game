@@ -1,5 +1,8 @@
 # Project_1-Game
 Project Name: "Scissors Paper Stone"
+Link to Game: https://joyce-paul.github.io/Project_1-Game/
+
+
 
 
 How the Game Flows:
@@ -38,5 +41,5 @@ When we select one of the icons, it will be compared against the computer's choi
 7) Unsolved Problems:
 - Append. CSS animation keyframes
 - Set timeout message of You WIN, You LOSE, IT IS A TIE.
-- A link to my hosted working game in the URL section of your Github repo.
+
 
