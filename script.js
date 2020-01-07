@@ -59,7 +59,7 @@ function loseGame(playerChoice, computerChoice) {
     document.getElementById("player-score").innerHTML = playerScore;
     document.getElementById("computer-score").innerHTML = computerScore;
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
-    document.querySelector(".outcome").innerHTML = "You Lost! 🙁"; // Message that says player lost game
+    document.querySelector(".outcome").innerHTML = "You Lost! 👿"; // Message that says player lost game
     document.querySelector(".outcome").style.color = "red"; // Message colour switched to red
     console.log(`you clicked ${playerChoice}`);
 }
@@ -69,7 +69,7 @@ function loseGame(playerChoice, computerChoice) {
 // WHEN THERE IS A TIE
 function tie(playerChoice, computerChoice) {
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
-     document.querySelector(".outcome").innerHTML = "It is a TIE! 🙃"; // Message that says it is a tie
+     document.querySelector(".outcome").innerHTML = "It is a TIE! 🧐"; // Message that says it is a tie
      document.querySelector(".outcome").style.color = "#ffc000"; // Message colour switched to grey
 }
 
