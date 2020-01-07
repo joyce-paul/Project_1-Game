@@ -26,6 +26,7 @@ var scissorsSound = document.getElementById("scissors-sound");
 var scissorsIcon = document.getElementById("scissors");
 scissorsIcon.addEventListener("click", function(){ scissorsSound.play(); });
 
+
 // PAPER SOUND EFFECT ON PAPER ICON
 var paperSound = document.getElementById("paper-sound");
 var paperIcon = document.getElementById("paper");
@@ -100,7 +101,7 @@ random_bg_color();
 
 
 // STEP 6 -- IF AND ELSE STATEMENT OF PLAYER AND COMPUTER CHOICES
-function choices(playerChoice, computerChoice) {
+function choices(playerChoice, computerChoice) { //Compare both player and computer icon selections
     var computerChoice = getComputerChoice();
         if (playerChoice === computerChoice) {
             tie(playerChoice, computerChoice);
@@ -172,10 +173,12 @@ playAgain();
 
 
 
+
+
+
+
 // TO DOs
 // Comments on code
-// Update README
-
 // Slow down effects on WIN LOSE TIE messages
 // Slow down the effects on icons when they flip
 // append. CSS animation keyframes

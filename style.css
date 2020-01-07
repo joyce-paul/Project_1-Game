@@ -53,21 +53,6 @@ h4 {
 }
 
 
-
-
-
-/*h4 {
-    font-family: "Arial", sans-serif;
-    width: 250px;
-    height: auto;
-    background: #92B901;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 10px;
-    font-size: 20px;
-}*/
-
-
 h5 {
     font-family: "Arial", sans-serif;
     font-weight: bold;
@@ -142,12 +127,7 @@ h5 {
 }
 
 
-#player-score-label {
-    font-weight: bold;
-}
-
-
-#computer-score-label {
+.scoreboard {
     font-weight: bold;
 }
 
