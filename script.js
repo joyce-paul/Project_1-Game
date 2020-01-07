@@ -4,16 +4,28 @@ console.log("Scissors-Paper-Stone: Game starts now");
 var playerScore = 0; //Player score starts at 0
 var computerScore = 0; //Computer score starts at 0
 
+
+
+//STEP 2 -- SOUND EFFECTS ON ICONS
 // SCISSORS SOUND EFFECT ON SCISSORS ICON
-var mySound = document.getElementById("scissors-sound");
-var correctButton = document.getElementById("scissors");
-correctButton.addEventListener("click", function(){ mySound.play(); });
+var scissorsSound = document.getElementById("scissors-sound");
+var scissorsIcon = document.getElementById("scissors");
+scissorsIcon.addEventListener("click", function(){ scissorsSound.play(); });
 
 
+// PAPER SOUND EFFECT ON PAPER ICON
+var paperSound = document.getElementById("paper-sound");
+var paperIcon = document.getElementById("paper");
+paperIcon.addEventListener("click", function(){ paperSound.play(); });
 
 
+// STONE SOUND EFFECT ON STONE ICON
+var stoneSound = document.getElementById("stone-sound");
+var stoneIcon = document.getElementById("stone");
+stoneIcon.addEventListener("click", function(){ stoneSound.play(); });
 
-// STEP 2 -- GET COMPUTER CHOICES USING RANDOM NUMBERS (MATH.RANDOM) AND MATH.FLOOR FOR WHOLE NUMBERS
+
+// STEP 3 -- GET COMPUTER CHOICES USING RANDOM NUMBERS (MATH.RANDOM) AND MATH.FLOOR FOR WHOLE NUMBERS
 function getComputerChoice() {
     var randomNumber = Math.floor(Math.random() * 3)
     if (randomNumber === 0) {
@@ -26,11 +38,7 @@ function getComputerChoice() {
 }
 
 
-
-
-
-
-// STEP 3 -- DEFINE FUNCTION WHERE PLAYER WINS
+// STEP 4 -- DEFINE FUNCTION WHERE PLAYER WINS
 // PLAYER WINS
 function winGame(playerChoice, computerChoice) { // Player wins
     playerScore++;
@@ -44,7 +52,7 @@ function winGame(playerChoice, computerChoice) { // Player wins
 }
 
 
-// STEP 4 -- DEFINE FUNCTION WHERE PLAYER LOSES
+// STEP 5 -- DEFINE FUNCTION WHERE PLAYER LOSES
 // PLAYER LOSES
 function loseGame(playerChoice, computerChoice) {
     computerScore++;
@@ -57,7 +65,7 @@ function loseGame(playerChoice, computerChoice) {
 }
 
 
-// STEP 5 -- DEFINE FUNCTION WHERE THERE IS A TIE
+// STEP 6 -- DEFINE FUNCTION WHERE THERE IS A TIE
 // WHEN THERE IS A TIE
 function tie(playerChoice, computerChoice) {
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
@@ -66,8 +74,7 @@ function tie(playerChoice, computerChoice) {
 }
 
 
-
-// STEP 6 -- IF AND ELSE STATEMENT OF PLAYER AND COMPUTER CHOICES
+// STEP 7 -- IF AND ELSE STATEMENT OF PLAYER AND COMPUTER CHOICES
 function choices(playerChoice, computerChoice) {
     var computerChoice = getComputerChoice();
         if (playerChoice === computerChoice) {
@@ -93,7 +100,7 @@ getComputerChoice();
 
 
 
-// STEP 7 -- DEFINE START GAME FUNCTION
+// STEP 8 -- DEFINE START GAME FUNCTION
 // EVENT LISTENERS ON ALL THREE ICONS TO SHOW THAT PLAYER CLICKED ON THEM
 function startGame() {
     document.getElementById("scissors").addEventListener("click", function() {
@@ -116,7 +123,7 @@ function startGame() {
 startGame();
 
 
-// STEP 8 -- DEFINE PLAY AGAIN FUNCTION TO RESET SCORES
+// STEP 9 -- DEFINE PLAY AGAIN FUNCTION TO RESET SCORES
 // PLAY AGAIN
 function playAgain() {
     document.getElementById("play-again").addEventListener("click", function() {
@@ -138,12 +145,7 @@ playAgain();
 
 
 // TO DOs
-
 // Slow down the effects on icons when they flip
-
-// Audio for click on scissors icon
-
-// Audio
 
 // Background changes colour when win
 
@@ -156,18 +158,13 @@ playAgain();
 // Scissors paper stone heading animation
 // append. CSS animation keyframes
 
+
+// Audio for click on paper icon [DONE]
+// Audio for click on stone icon [DONE]
+// Audio for click on scissors icon [DONE]
 // Add emojis to win lose tie messages [DONE]
 // Change colour on icons to bright green or yellow when pressed [DONE]
 // Change the colour of TIE message [DONE]
-
-
-
-
-
-
-
-
-
 // Error in the TIE function [DONE]
 // Revise if and else statements [DONE]
 // Use emojis to replace text [DONE]
