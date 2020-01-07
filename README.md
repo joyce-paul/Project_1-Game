@@ -33,6 +33,8 @@ When we select one of the icons, it will be compared against the computer's choi
 
 - I began the project by creating a basic structure on HTML and CSS using Bootstrap. This was followed by creating an alert message on the javascript file to see if it works. I then created the game logic to see if it works.
 
+- What I've learned through this process: I've learned that it's important to break tasks down into smaller sizes. This has a two-pronged effect. It makes the tasks more achievable and helps you to complete them.
+
 7) Unsolved Problems:
 - Append. CSS animation keyframes
 - Set timeout message of You WIN, You LOSE, IT IS A TIE.

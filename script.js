@@ -48,7 +48,7 @@ function winGame(playerChoice, computerChoice) { // Player wins
     document.querySelector(".outcome").innerHTML = "You Won! 🤓"; // Message that says player won game
     document.querySelector(".outcome").style.color = "green"; // Message colour switched to green
 
-    console.log(`you clicked ${playerChoice}`);
+    // console.log(`you clicked ${playerChoice}`);
 }
 
 
@@ -61,7 +61,7 @@ function loseGame(playerChoice, computerChoice) {
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
     document.querySelector(".outcome").innerHTML = "You Lost! 👿"; // Message that says player lost game
     document.querySelector(".outcome").style.color = "red"; // Message colour switched to red
-    console.log(`you clicked ${playerChoice}`);
+    // console.log(`you clicked ${playerChoice}`);
 }
 
 
@@ -145,6 +145,7 @@ playAgain();
 
 
 // TO DOs
+
 // Slow down the effects on icons when they flip
 
 // Background changes colour when win
