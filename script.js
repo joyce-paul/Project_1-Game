@@ -6,6 +6,21 @@ var computerScore = 0; //Computer score starts at 0
 
 
 
+
+/*function random_bg_color() {
+    var red = Math.floor(Math.random() * 256);
+    var green = Math.floor(Math.random() * 256);
+    var blue = Math.floor(Math.random() * 256);
+    var alpha = Math.random(0.1);
+    var bgColor = "rgba(" +red +", " +green +"," +blue +"," +alpha +")";
+
+    document.body.style.background = bgColor;
+    }
+
+random_bg_color();*/
+
+
+
 //STEP 2 -- SOUND EFFECTS ON ICONS
 // SCISSORS SOUND EFFECT ON SCISSORS ICON
 var scissorsSound = document.getElementById("scissors-sound");
@@ -47,7 +62,8 @@ function winGame(playerChoice, computerChoice) { // Player wins
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
     document.querySelector(".outcome").innerHTML = "You Won! 🤓"; // Message that says player won game
     document.querySelector(".outcome").style.color = "green"; // Message colour switched to green
-    document.body.style.backgroundColor = "pink";
+    document.body.style.backgroundColor = "#a9ff63";
+/*    random_bg_color();*/
     // console.log(`you clicked ${playerChoice}`);
 }
 
@@ -62,7 +78,7 @@ function loseGame(playerChoice, computerChoice) {
     document.querySelector(".outcome").innerHTML = "You Lost! 👿"; // Message that says player lost game
     document.querySelector(".outcome").style.color = "red"; // Message colour switched to red
     document.body.style.backgroundColor = "yellow";
-
+/*random_bg_color();*/
     // console.log(`you clicked ${playerChoice}`);
 }
 
@@ -74,6 +90,7 @@ function tie(playerChoice, computerChoice) {
      document.querySelector(".outcome").innerHTML = "It is a TIE! 🧐"; // Message that says it is a tie
      document.querySelector(".outcome").style.color = "#ffc000"; // Message colour switched to grey
      document.body.style.backgroundColor = "#4ffefe";
+/*random_bg_color();*/
 }
 
 
@@ -151,11 +168,14 @@ function playAgain() {
 playAgain();
 
 
+
 // TO DOs
 
-// Slow down the effects on icons when they flip
+// Create random colour generator
 
-// Background changes colour when win
+// Change the audio of the stone icon
+
+// Slow down the effects on icons when they flip
 
 // Comments on code
 
@@ -164,9 +184,11 @@ playAgain();
 // A link to my hosted working game in the URL section of your Github repo.
 
 // Scissors paper stone heading animation
+
 // append. CSS animation keyframes
 
 
+// Background changes colour when win, lose or tie [DONE]
 // Audio for click on paper icon [DONE]
 // Audio for click on stone icon [DONE]
 // Audio for click on scissors icon [DONE]
