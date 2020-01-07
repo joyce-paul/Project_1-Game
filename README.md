@@ -4,7 +4,6 @@ Link to Game: https://joyce-paul.github.io/Project_1-Game/
 
 
 
-
 How the Game Flows:
 1) Page Layout:
     - Three images of "scissors", "paper" and "stone" set in inline-block
@@ -39,7 +38,5 @@ When we select one of the icons, it will be compared against the computer's choi
 - What I've learned through this process: I've learned that it's important to break tasks down into smaller sizes. This has a two-pronged effect. It makes the tasks more achievable and helps you to complete them.
 
 7) Unsolved Problems:
-- Append. CSS animation keyframes
-- Set timeout message of You WIN, You LOSE, IT IS A TIE.
-
-
+// Slow down effects (set timeout) on WIN LOSE TIE messages
+// Slow down the effects on icons when they flip

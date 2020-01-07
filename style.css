@@ -13,6 +13,7 @@ body {
 
 h1 {
     font-family: "Arial", sans-serif;
+    font-weight: bold;
     color: #790382;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -47,13 +48,34 @@ p {
 
 h4 {
     font-family: "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
 }
+
+
+
+
+
+/*h4 {
+    font-family: "Arial", sans-serif;
+    width: 250px;
+    height: auto;
+    background: #92B901;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 20px;
+}*/
 
 
 h5 {
     font-family: "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
     margin-top: 2px;
     margin-bottom: 1px;
+    color: green;
+
 }
 
 

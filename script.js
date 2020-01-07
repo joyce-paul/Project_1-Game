@@ -1,10 +1,11 @@
 console.log("Scissors-Paper-Stone: Game starts now");
 
-// STEP 1 - SET UP SCORES IN GLOBAL VARIABLES
+// STEP 1 - SET UP SCORES
 var playerScore = 0; //Player score starts at 0
 var computerScore = 0; //Computer score starts at 0
 
 
+// BACKGROUND COLOUR CHANGES USING MATH.RANDOM()
 function random_bg_color() {
     var red = Math.floor(Math.random() * 256);
     var green = Math.floor(Math.random() * 256);
@@ -19,12 +20,11 @@ random_bg_color();
 
 
 
-//STEP 2 -- SOUND EFFECTS ON ICONS
+// SOUND EFFECTS
 // SCISSORS SOUND EFFECT ON SCISSORS ICON
 var scissorsSound = document.getElementById("scissors-sound");
 var scissorsIcon = document.getElementById("scissors");
 scissorsIcon.addEventListener("click", function(){ scissorsSound.play(); });
-
 
 // PAPER SOUND EFFECT ON PAPER ICON
 var paperSound = document.getElementById("paper-sound");
@@ -38,7 +38,14 @@ var stoneIcon = document.getElementById("stone");
 stoneIcon.addEventListener("click", function(){ stoneSound.play(); });
 
 
-// STEP 3 -- GET COMPUTER CHOICES USING RANDOM NUMBERS (MATH.RANDOM) AND MATH.FLOOR FOR WHOLE NUMBERS
+// SOUND EFFECTS ON PLAYAGAIN BUTTON
+var startSound = document.getElementById("start-music");
+var start = document.getElementById("play-again");
+start.addEventListener("click", function(){ startSound.play(); });
+
+
+
+// STEP 2 -- GET COMPUTER CHOICES USING RANDOM NUMBERS (MATH.RANDOM) AND MATH.FLOOR FOR WHOLE NUMBERS
 function getComputerChoice() {
     var randomNumber = Math.floor(Math.random() * 3)
     if (randomNumber === 0) {
@@ -51,7 +58,7 @@ function getComputerChoice() {
 }
 
 
-// STEP 4 -- DEFINE FUNCTION WHERE PLAYER WINS
+// STEP 3 -- DEFINE FUNCTION WHERE PLAYER WINS
 // PLAYER WINS
 function winGame(playerChoice, computerChoice) { // Player wins
     playerScore++;
@@ -66,7 +73,7 @@ function winGame(playerChoice, computerChoice) { // Player wins
 }
 
 
-// STEP 5 -- DEFINE FUNCTION WHERE PLAYER LOSES
+// STEP 4 -- DEFINE FUNCTION WHERE PLAYER LOSES
 // PLAYER LOSES
 function loseGame(playerChoice, computerChoice) {
     computerScore++;
@@ -81,7 +88,7 @@ random_bg_color();
 }
 
 
-// STEP 6 -- DEFINE FUNCTION WHERE THERE IS A TIE
+// STEP 5 -- DEFINE FUNCTION WHERE THERE IS A TIE
 // WHEN THERE IS A TIE
 function tie(playerChoice, computerChoice) {
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
@@ -92,7 +99,7 @@ random_bg_color();
 }
 
 
-// STEP 7 -- IF AND ELSE STATEMENT OF PLAYER AND COMPUTER CHOICES
+// STEP 6 -- IF AND ELSE STATEMENT OF PLAYER AND COMPUTER CHOICES
 function choices(playerChoice, computerChoice) {
     var computerChoice = getComputerChoice();
         if (playerChoice === computerChoice) {
@@ -117,8 +124,7 @@ function choices(playerChoice, computerChoice) {
 getComputerChoice();
 
 
-
-// STEP 8 -- DEFINE START GAME FUNCTION
+// STEP 7 -- DEFINE START GAME FUNCTION
 // EVENT LISTENERS ON ALL THREE ICONS TO SHOW THAT PLAYER CLICKED ON THEM
 function startGame() {
     document.getElementById("scissors").addEventListener("click", function() {
@@ -141,7 +147,7 @@ function startGame() {
 startGame();
 
 
-// STEP 9 -- DEFINE PLAY AGAIN FUNCTION TO RESET SCORES
+// STEP 8 -- DEFINE PLAY AGAIN FUNCTION TO RESET SCORES
 // PLAY AGAIN
 function playAgain() {
     document.getElementById("play-again").addEventListener("click", function() {
@@ -167,22 +173,18 @@ playAgain();
 
 
 // TO DOs
-
-// Create random colour generator
-
-
-// Slow down the effects on icons when they flip
-
 // Comments on code
-
 // Update README
 
-// A link to my hosted working game in the URL section of your Github repo. [DONE]
-
-// Scissors paper stone heading animation
-
+// Slow down effects on WIN LOSE TIE messages
+// Slow down the effects on icons when they flip
 // append. CSS animation keyframes
 
+
+// Sound effect on playagain button [DONE]
+// A link to my hosted working game in the URL section of your Github repo. [DONE]
+// Scissors paper stone heading animation [DONE]
+// Create random colour generator [DONE]
 // Change the audio of the stone icon [DONE]
 // A link to my hosted working game in the URL section of your Github repo. [DONE]
 // Background changes colour when win, lose or tie [DONE]
@@ -204,7 +206,6 @@ playAgain();
 // Change the cursor to pointer [DONE]
 //   If/else game logic [DONE]
 //   playAgain()  [DONE]
-
 
 // Step 1: Set up playerScore & computerScore. Both start at 0
 // Step 2:  Check if event listeners on icons work
@@ -232,6 +233,3 @@ for (var i = 0; i < iconChoices.length; i++) {
 // (c) If player or Computer wins, loses or a tie, message alert
 // (d)Click Play Again button to restart game
 
-
-//NOTES
-/*    var choices =["Scissors", "Paper", "Stone"]; */
