@@ -9,7 +9,7 @@ function random_bg_color() {
     var red = Math.floor(Math.random() * 256);
     var green = Math.floor(Math.random() * 256);
     var blue = Math.floor(Math.random() * 256);
-    var alpha = Math.random(0.1);
+    var alpha = .2;
     var bgColor = "rgba(" +red +", " +green +"," +blue +"," +alpha +")";
 
     document.body.style.background = bgColor;
@@ -86,7 +86,7 @@ random_bg_color();
 function tie(playerChoice, computerChoice) {
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
      document.querySelector(".outcome").innerHTML = "It is a TIE! 🧐"; // Message that says it is a tie
-     document.querySelector(".outcome").style.color = "#ffc000"; // Message colour switched to grey
+     document.querySelector(".outcome").style.color = "#ff8000"; // Message colour switched to grey
 /*     document.body.style.backgroundColor = "#4ffefe";*/
 random_bg_color();
 }
