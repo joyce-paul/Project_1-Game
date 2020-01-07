@@ -26,7 +26,7 @@ function winGame(playerChoice, computerChoice) { // Player wins
     document.getElementById("player-score").innerHTML = playerScore;
     document.getElementById("computer-score").innerHTML = computerScore;
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
-    document.querySelector(".outcome").innerHTML = "You Won!"; // Message that says player won game
+    document.querySelector(".outcome").innerHTML = "You Won! 🤓"; // Message that says player won game
     document.querySelector(".outcome").style.color = "green"; // Message colour switched to green
 
     console.log(`you clicked ${playerChoice}`);
@@ -40,7 +40,7 @@ function loseGame(playerChoice, computerChoice) {
     document.getElementById("player-score").innerHTML = playerScore;
     document.getElementById("computer-score").innerHTML = computerScore;
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
-    document.querySelector(".outcome").innerHTML = "You Lost!"; // Message that says player lost game
+    document.querySelector(".outcome").innerHTML = "You Lost! 🙁"; // Message that says player lost game
     document.querySelector(".outcome").style.color = "red"; // Message colour switched to red
     console.log(`you clicked ${playerChoice}`);
 }
@@ -50,7 +50,7 @@ function loseGame(playerChoice, computerChoice) {
 // WHEN THERE IS A TIE
 function tie(playerChoice, computerChoice) {
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
-     document.querySelector(".outcome").innerHTML = "TIE!"; // Message that says it is a tie
+     document.querySelector(".outcome").innerHTML = "It is a TIE! 🙃"; // Message that says it is a tie
      document.querySelector(".outcome").style.color = "#ffc000"; // Message colour switched to grey
 }
 
@@ -128,10 +128,6 @@ playAgain();
 
 // TO DOs
 
-// Change colour on icons to bright green or yellow when pressed [DONE]
-
-// Change the colour of TIE message [DONE]
-
 // Slow down the effects on icons when they flip
 
 // Audio for clicks on icon
@@ -140,15 +136,23 @@ playAgain();
 
 // Comments on code
 
-// Readme
+// Update README
 
-
+// A link to my hosted working game in the URL section of your Github repo.
 
 // Scissors paper stone heading animation
-// Audio effects for Win Lose or Draw
-//   Update README file
-// A link to my hosted working game in the URL section of your Github repo.
 // append. CSS animation keyframes
+
+// Add emojis to win lose tie messages [DONE]
+// Change colour on icons to bright green or yellow when pressed [DONE]
+// Change the colour of TIE message [DONE]
+
+
+
+
+
+
+
 
 
 // Error in the TIE function [DONE]
