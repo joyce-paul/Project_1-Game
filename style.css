@@ -19,11 +19,6 @@ h1 {
 }
 
 
-h4 {
-    font-family: "Arial", sans-serif;
-}
-
-
 h3 {
     font-family: "Arial", sans-serif;
     margin-top: 2px;
@@ -34,6 +29,16 @@ h3 {
 p {
     font-family: "Arial", sans-serif;
     font-size: 14px;
+}
+
+h4 {
+    font-family: "Arial", sans-serif;
+}
+
+
+
+
+h5 {
 
 }
 
@@ -48,16 +53,6 @@ p {
     padding: 8px;
     outline: none;
 }
-
-
-/*@keyframes glow {
-  from {
-    box-shadow: 0 0 5px -5px #c08bc4;
-  }
-  to {
-    box-shadow: 0 0 5px 5px #c08bc4;
-  }
-}*/
 
 
 .result {
@@ -93,17 +88,14 @@ p {
     outline: none;
 }
 
-
 .icon:hover {background-color: #d8daf4}
 
-
 .icon:active {
-  background-color: green;
+  background-color: #00ff00;
   box-shadow: 0 5px #666;
   transform: rotate(140deg);
  /* transform: translateY(4px);*/
 }
-
 
 
 .icon-text {

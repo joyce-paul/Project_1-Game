@@ -34,7 +34,6 @@ When we select one of the icons, it will be compared against the computer's choi
 - I began the project by creating a basic structure on HTML and CSS using Bootstrap. This was followed by creating an alert message on the javascript file to see if it works. I then created the game logic to see if it works.
 
 7) Unsolved Problems:
-- A bug with the TIE message
 - Append. CSS animation keyframes
 - Set timeout message of You WIN, You LOSE, IT IS A TIE.
 - A link to my hosted working game in the URL section of your Github repo.

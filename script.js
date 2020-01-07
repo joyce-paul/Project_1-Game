@@ -51,7 +51,7 @@ function loseGame(playerChoice, computerChoice) {
 function tie(playerChoice, computerChoice) {
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
      document.querySelector(".outcome").innerHTML = "TIE!"; // Message that says it is a tie
-     document.querySelector(".outcome").style.color = "orange"; // Message colour switched to grey
+     document.querySelector(".outcome").style.color = "#ffc000"; // Message colour switched to grey
 }
 
 
@@ -127,15 +127,32 @@ playAgain();
 
 
 // TO DOs
+
+// Change colour on icons to bright green or yellow when pressed [DONE]
+
+// Change the colour of TIE message [DONE]
+
+// Slow down the effects on icons when they flip
+
+// Audio for clicks on icon
+
+// Background changes colour when win
+
+// Comments on code
+
+// Readme
+
+
+
 // Scissors paper stone heading animation
-// Error in the TIE function
-// Revise if and else statements
 // Audio effects for Win Lose or Draw
 //   Update README file
 // A link to my hosted working game in the URL section of your Github repo.
 // append. CSS animation keyframes
 
 
+// Error in the TIE function [DONE]
+// Revise if and else statements [DONE]
 // Use emojis to replace text [DONE]
 // The scores seem to be added multiple times sometimes. [DONE]
 // Instructions on how to play the game [DONE]
