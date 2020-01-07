@@ -47,7 +47,7 @@ function winGame(playerChoice, computerChoice) { // Player wins
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
     document.querySelector(".outcome").innerHTML = "You Won! 🤓"; // Message that says player won game
     document.querySelector(".outcome").style.color = "green"; // Message colour switched to green
-
+    document.body.style.backgroundColor = "pink";
     // console.log(`you clicked ${playerChoice}`);
 }
 
@@ -61,6 +61,8 @@ function loseGame(playerChoice, computerChoice) {
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
     document.querySelector(".outcome").innerHTML = "You Lost! 👿"; // Message that says player lost game
     document.querySelector(".outcome").style.color = "red"; // Message colour switched to red
+    document.body.style.backgroundColor = "yellow";
+
     // console.log(`you clicked ${playerChoice}`);
 }
 
@@ -71,6 +73,7 @@ function tie(playerChoice, computerChoice) {
     document.querySelector(".result > h3").innerHTML = `You chose ${playerChoice.toUpperCase()}. The computer chose ${computerChoice.toUpperCase()}.`;
      document.querySelector(".outcome").innerHTML = "It is a TIE! 🧐"; // Message that says it is a tie
      document.querySelector(".outcome").style.color = "#ffc000"; // Message colour switched to grey
+     document.body.style.backgroundColor = "#4ffefe";
 }
 
 
@@ -138,6 +141,10 @@ function playAgain() {
 
    document.querySelector(".result > h3").innerHTML = "Select ✌🏽, ✋🏽 or ✊🏽."; // Message appears once playAgain button clicked
    document.querySelector(".outcome").innerHTML = ""; //removes text once button is clicked.
+
+   document.body.style.backgroundColor = "white";
+
+
     })
 }
 
