@@ -47,7 +47,7 @@ start.addEventListener("click", function(){ startSound.play(); });
 
 
 // STEP 2 -- GET COMPUTER CHOICES USING RANDOM NUMBERS (MATH.RANDOM) AND MATH.FLOOR FOR WHOLE NUMBERS
-function getComputerChoice() {
+function randomComputerChoice() {
     var randomNumber = Math.floor(Math.random() * 3)
     if (randomNumber === 0) {
         return "scissors";
@@ -102,7 +102,7 @@ random_bg_color();
 
 // STEP 6 -- IF AND ELSE STATEMENT OF PLAYER AND COMPUTER CHOICES
 function choices(playerChoice, computerChoice) { //Compare both player and computer icon selections
-    var computerChoice = getComputerChoice();
+    var computerChoice = randomComputerChoice();
         if (playerChoice === computerChoice) {
             tie(playerChoice, computerChoice);
         } else if (playerChoice === "scissors" && computerChoice === "stone") {
@@ -122,7 +122,7 @@ function choices(playerChoice, computerChoice) { //Compare both player and compu
         }
         }
 
-getComputerChoice();
+randomComputerChoice();
 
 
 // STEP 7 -- DEFINE START GAME FUNCTION
