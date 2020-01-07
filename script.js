@@ -4,6 +4,14 @@ console.log("Scissors-Paper-Stone: Game starts now");
 var playerScore = 0; //Player score starts at 0
 var computerScore = 0; //Computer score starts at 0
 
+// SCISSORS SOUND EFFECT ON SCISSORS ICON
+var mySound = document.getElementById("scissors-sound");
+var correctButton = document.getElementById("scissors");
+correctButton.addEventListener("click", function(){ mySound.play(); });
+
+
+
+
 
 // STEP 2 -- GET COMPUTER CHOICES USING RANDOM NUMBERS (MATH.RANDOM) AND MATH.FLOOR FOR WHOLE NUMBERS
 function getComputerChoice() {
@@ -16,6 +24,9 @@ function getComputerChoice() {
         return "stone";
     }
 }
+
+
+
 
 
 
@@ -130,7 +141,9 @@ playAgain();
 
 // Slow down the effects on icons when they flip
 
-// Audio for clicks on icon
+// Audio for click on scissors icon
+
+// Audio
 
 // Background changes colour when win
 
