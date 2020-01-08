@@ -39,3 +39,7 @@ When we select one of the icons, it will be compared against the computer's choi
 7) Unsolved Problems:
 // Slow down effects (set timeout) on WIN LOSE TIE messages
 // Slow down the effects on icons when they flip
+
+8) Images from https://thenounproject.com/
+
+9) Sound effects from: https://www.audioblocks.com/ and https://freesound.org/
